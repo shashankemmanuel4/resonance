@@ -1,0 +1,34 @@
+{
+  "name": "resonance-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend server for RESONANCE - Contextual Focus & Environmental Resonance Engine",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "seed": "tsx src/seed/runSeed.ts",
+    "reset": "tsx src/seed/runReset.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.18.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
